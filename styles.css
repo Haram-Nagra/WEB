@@ -1,0 +1,53 @@
+.hscreen{
+height: 100vh;
+/* saari height viewport wali cover karega */
+}
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-row{
+  flex-direction: row;
+}
+.jcentre{
+  justify-content: center;
+}
+.acentre{
+  align-items: center;
+}
+.allpd{
+  padding: 20px;
+}
+.xpd{
+  padding:0 50px;
+}
+.ypd{
+  padding:50px 0 ;
+}
+*{
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  background-image: linear-gradient(rgb(53, 2, 2),rgb(20, 1, 54));
+}
+.img{
+  background-image:url(./assets/profilepic.jpg);
+  object-fit: contain;
+  width:400px;
+  height:400px;
+  background-size: cover;
+  background-position: right;
+}
+.imgdiv{
+  height: 400px;
+  width: 400px;
+}
+.cgap{
+  column-gap: 30px;
+}
+.rgap{
+  row-gap: 30px;
+}
