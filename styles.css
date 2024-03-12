@@ -28,10 +28,11 @@ height: 100vh;
 }
 *{
   color: whitesmoke;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: CommuterSans;
 }
 body{
   background-image: linear-gradient(rgb(53, 2, 2),rgb(20, 1, 54));
+  
 }
 .img{
   background-image:url(./assets/profilepic.jpg);
@@ -50,4 +51,41 @@ body{
 }
 .rgap{
   row-gap: 30px;
+}
+.iptsize{
+  width: 400px;
+  height: 30px;
+  background:transparent;
+  border:1px solid #ccc;
+  border-color:gray;
+}
+.txtarea{
+  width: 400px;
+  height: 200px;
+  background: transparent;
+}
+.iptpd{
+  padding: 4px;
+}
+.margin{
+  margin-top: 20px;
+  width: 90px;
+  height: 30px;
+  background: transparent;
+  border:1px solid #ccc;
+  border-color:gray;
+}
+.tmargin{
+  margin-top:80px;
+}
+.header{
+  top: 0%;
+  left: 0%;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+}
+a{
+  text-decoration: none;
 }

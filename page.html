@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <header class="flex flex-row jcentre header">
+        <nav class="flex flex-row cgap acentre">
+            <a href="#ed">Education</a>
+            <a href="#sk">Skills</a>
+            <a href="#exp">Experience</a>
+            <a href="#hb">Hobbies</a>
+            <a href="#pj">Projects</a>
+            <a href="#form">Contact</a>
+        </nav>
+    </header>
     <div class="hscreen flex flex-row acentre xpd cgap">
         <div>
             <h1>Portfolio</h1>
@@ -21,8 +31,8 @@
             <div class='img'></div>
         </div>
     </div>
-    <div class='hscreen flex flex-col acentre xpd rgap'>
-        <div>
+    <div class=' flex flex-col acentre xpd rgap'>
+        <div id="ed">
             <h2>Education</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, nulla! Autem ex commodi officiis velit
                 deserunt voluptatem similique explicabo odit, dolor eaque cupiditate fugit voluptas cum hic temporibus
@@ -34,7 +44,7 @@
                 officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas animi
                 quia dolor repellendus?</p>
         </div>
-        <div>
+        <div id="sk">
             <h2>Skills</h2>
             <ul class=" flex rgap flex-col">
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut porro
@@ -49,11 +59,11 @@
             </ul>
         </div>
     </div>
-    <div class='hscreen flex flex-col acentre xpd rgap'>
-        <div>
+    <div class=' flex flex-col acentre xpd rgap'>
+        <div id="exp">
             <h2>Experience</h2>
 
-            <ul>
+            <ul class=" flex rgap flex-col">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
                     quidem blanditiis, iusto sunt temporibus, dolorum voluptatum totam autem sint eos et obcaecati ut
                     quod minima libero?</li>
@@ -62,9 +72,9 @@
                     deserunt dolor natus ipsa explicabo! Dolor!</li>
             </ul>
         </div>
-        <div>
+        <div id="hb">
             <h2>Hobbies</h2>
-            <ul>
+            <ul class=" flex rgap flex-col">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
                     quidem blanditiis, iusto sunt temporibus, dolorum voluptatum totam autem sint eos et obcaecati ut
                     quod minima libero?</li>
@@ -74,8 +84,8 @@
             </ul>
         </div>
     </div>
-    <div class=''>
-        <div class=''>
+    <div class='flex jcentre xpd'>
+        <div id="pj">
             <h2 class=''>Projects</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut porro
                 numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere dolor
@@ -83,16 +93,18 @@
         </div>
     </div>
     </div>
-    <form class="">
-        <label for="fname">First Name : </label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name : </label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="em">Email : </label><br>
-        <input type="text" id="em" name="em"><br>
-        <label for="mname">Request:</label><br>
-        <textarea id="mname" name="mname" class=""></textarea>
+    <form id="form" class="hscreen flex flex-col acentre tmargin">
+        <h2>Let's Connect</h2>
+
+        <input class="iptsize iptpd" type="text" id="fname" name="fname" placeholder="Name"><br>
+        
+        <input  class="iptsize iptpd" type="text" id="em" name="em" placeholder="Email"><br>
+        
+        <textarea id="mname " name="mname" class="txtarea iptpd" placeholder="Message"></textarea>
+        
+        <button class="margin" type="submit ">Submit</button>
     </form>
+
 
 </body>
 
