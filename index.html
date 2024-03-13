@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
-<body>
-    <header class="flex flex-row jcentre header">
-        <nav class="flex flex-row cgap acentre">
+<body class="bg-gradient-to-r from-[#006663] to-[#111111]  font-serif ">
+    <header class="flex flex-row bg-gradient-to-r from-[#006663] to-[#111111] hover:bg-gradient-to-t justify-center fixed w-full">
+        <nav class="flex flex-row p-3 gap-x-10">
             <a href="#ed">Education</a>
             <a href="#sk">Skills</a>
             <a href="#exp">Experience</a>
@@ -19,51 +31,65 @@
             <a href="#form">Contact</a>
         </nav>
     </header>
-    <div class="hscreen flex flex-row acentre xpd cgap">
-        <div>
-            <h1>Portfolio</h1>
-            <h3>Haram Iqbal Nagra</h3>
+    <div class="flex flex-row items-center px-10 gap-x-10 h-screen ">
+        <div class="h-[400px] w-[700px]">
+            <h1 class="text-6xl">Portfolio</h1><br>
+            <h3 class="text-2xl">Haram Iqbal Nagra</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente excepturi veniam soluta repellendus
                 sit distinctio in eius? Obcaecati veniam provident nam. Magni laudantium, minima libero sequi repellat
                 ratione tempore facilis.</p>
         </div>
-        <div class="imgdiv flex ">
-            <div class='img'></div>
+        <div class="flex h-[400px] w-[400px] ">
+            <div class='img bg-cover bg-right object-contain h-full w-full'></div>
         </div>
     </div>
-    <div class=' flex flex-col acentre xpd rgap'>
+    <div class=' flex flex-row items-start px-10 gap-x-5 '>
         <div id="ed">
-            <h2>Education</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, nulla! Autem ex commodi officiis velit
-                deserunt voluptatem similique explicabo odit, dolor eaque cupiditate fugit voluptas cum hic temporibus
-                voluptatum tempore?natus cum illo!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste eius. Qui
-                officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas animi
-                quia dolor repellendus?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste eius. Qui
-                officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas animi
-                quia dolor repellendus?</p>
+            <h2 class="text-3xl">Education</h2>
+            <ul class=" flex flex-col items-center px-10 gap-y-5">
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut
+                    porro
+                    numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere
+                    dolor
+                    inventore, natus cum illo!</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste
+                    eius. Qui
+                    officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas
+                    animi
+                    quia dolor repellendus?</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste
+                    eius. Qui
+                    officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas
+                    animi
+                    quia dolor repellendus?</li>
+            </ul>
         </div>
         <div id="sk">
-            <h2>Skills</h2>
-            <ul class=" flex rgap flex-col">
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut porro
-                numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere dolor
-                inventore, natus cum illo!</li>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste eius. Qui
-                officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas animi
-                quia dolor repellendus?</li>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste eius. Qui
-                officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas animi
-                quia dolor repellendus?</li>
+            <h2 class="text-3xl">Skills</h2>
+            <ul class=" flex flex-col items-center px-10 gap-y-5">
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut
+                    porro
+                    numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere
+                    dolor
+                    inventore, natus cum illo!</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste
+                    eius. Qui
+                    officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas
+                    animi
+                    quia dolor repellendus?</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque magni consequatur eligendi iste
+                    eius. Qui
+                    officia veritatis iste praesentium deleniti architecto impedit vel. Perspiciatis voluptates quas
+                    animi
+                    quia dolor repellendus?</li>
             </ul>
         </div>
     </div>
-    <div class=' flex flex-col acentre xpd rgap'>
+    <div class=' flex flex-row items-center px-10 gap-y-5 mt-24'>
         <div id="exp">
-            <h2>Experience</h2>
+            <h2 class="text-3xl">Experience</h2>
 
-            <ul class=" flex rgap flex-col">
+            <ul class="flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
                     quidem blanditiis, iusto sunt temporibus, dolorum voluptatum totam autem sint eos et obcaecati ut
                     quod minima libero?</li>
@@ -73,8 +99,8 @@
             </ul>
         </div>
         <div id="hb">
-            <h2>Hobbies</h2>
-            <ul class=" flex rgap flex-col">
+            <h2 class="text-3xl">Hobbies</h2>
+            <ul class="flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
                     quidem blanditiis, iusto sunt temporibus, dolorum voluptatum totam autem sint eos et obcaecati ut
                     quod minima libero?</li>
@@ -84,25 +110,41 @@
             </ul>
         </div>
     </div>
-    <div class='flex jcentre xpd'>
+    <div class='flex justify-center px-10 mt-24'>
         <div id="pj">
-            <h2 class=''>Projects</h2>
+            <h2 class="text-3xl">Projects</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut porro
                 numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere dolor
                 inventore, natus cum illo!</p>
         </div>
     </div>
+    <div class='flex flex-row px-10 gap-x-10 mt-8'>
+        <div class="flex h-[200px] w-[200px] rounded-lg">
+            <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
+        </div>
+        <div class="flex h-[200px] w-[200px] rounded-lg">
+            <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
+        </div>
+        <div class="flex h-[200px] w-[200px] rounded-lg">
+            <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
+        </div>
+        <div class="flex h-[200px] w-[200px] rounded-lg">
+            <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
+        </div>
+        <div class="flex h-[200px] w-[200px] rounded-lg">
+            <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
+        </div>
     </div>
-    <form id="form" class="hscreen flex flex-col acentre tmargin">
-        <h2>Let's Connect</h2>
+    <form id="form" class="h-screen flex flex-col items-center mt-24">
+        <h2 class="text-3xl">Let's Connect</h2>
 
-        <input class="iptsize iptpd" type="text" id="fname" name="fname" placeholder="Name"><br>
-        
-        <input  class="iptsize iptpd" type="text" id="em" name="em" placeholder="Email"><br>
-        
-        <textarea id="mname " name="mname" class="txtarea iptpd" placeholder="Message"></textarea>
-        
-        <button class="margin" type="submit ">Submit</button>
+        <input class="p-2 h-[30px] w-[400px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none" type="text" id="fname" name="fname" placeholder="Name"><br>
+
+        <input class=" p-2 h-[30px] w-[400px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none" type="text" id="em" name="em" placeholder="Email"><br>
+
+        <textarea class="p-2 h-[400px] w-[400px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none" id="mname " name="mname"  placeholder="Message"></textarea>
+
+        <button class="mt-6 " type="submit ">Submit</button>
     </form>
 
 

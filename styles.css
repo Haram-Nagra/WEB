@@ -1,8 +1,8 @@
-.hscreen{
-height: 100vh;
+/* .hscreen{
+height: 100vh; */
 /* saari height viewport wali cover karega */
-}
-.flex{
+/* } */
+/* .flex{
   display: flex;
 }
 .flex-col{
@@ -34,14 +34,7 @@ body{
   background-image: linear-gradient(rgb(53, 2, 2),rgb(20, 1, 54));
   
 }
-.img{
-  background-image:url(./assets/profilepic.jpg);
-  object-fit: contain;
-  width:400px;
-  height:400px;
-  background-size: cover;
-  background-position: right;
-}
+
 .imgdiv{
   height: 400px;
   width: 400px;
@@ -88,4 +81,12 @@ body{
 }
 a{
   text-decoration: none;
+} */
+.img{
+  background-image:url(./assets/profilepic.jpg);
+  /* object-fit: contain;
+  width:400px;
+  height:400px;
+  background-size: cover;
+  background-position: right; */
 }
