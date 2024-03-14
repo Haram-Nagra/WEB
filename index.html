@@ -11,6 +11,9 @@
         tailwind.config = {
             theme: {
                 extend: {
+                    screens: {
+                        xs: "315px"
+                    },
                     colors: {
                         clifford: "#da373d",
                     },
@@ -21,7 +24,8 @@
 </head>
 
 <body class="bg-gradient-to-r from-[#006663] to-[#111111]  font-serif ">
-    <header class="flex flex-row bg-gradient-to-r from-[#006663] to-[#111111] hover:bg-gradient-to-t justify-center fixed w-full">
+    <header
+        class="flex flex-row bg-gradient-to-r from-[#006663] to-[#111111] hover:bg-gradient-to-t justify-center fixed w-full">
         <nav class="flex flex-row p-3 gap-x-10">
             <a href="#ed">Education</a>
             <a href="#sk">Skills</a>
@@ -31,18 +35,19 @@
             <a href="#form">Contact</a>
         </nav>
     </header>
-    <div class="flex flex-row items-center px-10 gap-x-10 h-screen ">
-        <div class="h-[400px] w-[700px]">
-            <h1 class="text-6xl">Portfolio</h1><br>
-            <h3 class="text-2xl">Haram Iqbal Nagra</h3>
+    <div class="flex flex-col items-center px-10 gap-x-10 h-screen text-center md:flex-row md:text-start ">
+        <div class="h-[400px] flex flex-col justify-center md:w-[700px] w-full ">
+            <h1 class=" text-4xl sm:text-6xl">Portfolio</h1><br>
+            <h3 class="text-2xl mb-6">Haram Iqbal Nagra</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente excepturi veniam soluta repellendus
                 sit distinctio in eius? Obcaecati veniam provident nam. Magni laudantium, minima libero sequi repellat
                 ratione tempore facilis.</p>
         </div>
-        <div class="flex h-[400px] w-[400px] ">
+        <div
+            class="flex md:h-[400px] md:w-[400px] sm:h-[350px] sm:w-[350px] xs:h-[300px] xs:w-[300px] h-[200px] w-[200px] ">
             <div class='img bg-cover bg-right object-contain h-full w-full'></div>
         </div>
-    </div>
+        </div>
     <div class=' flex flex-row items-start px-10 gap-x-5 '>
         <div id="ed">
             <h2 class="text-3xl">Education</h2>
@@ -118,7 +123,7 @@
                 inventore, natus cum illo!</p>
         </div>
     </div>
-    <div class='flex flex-row px-10 gap-x-10 mt-8'>
+    <div class='flex flex-row px-10 gap-x-10 mt-8             '>
         <div class="flex h-[200px] w-[200px] rounded-lg">
             <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
         </div>
@@ -138,11 +143,17 @@
     <form id="form" class="h-screen flex flex-col items-center mt-24">
         <h2 class="text-3xl">Let's Connect</h2>
 
-        <input class="p-2 h-[30px] w-[400px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none" type="text" id="fname" name="fname" placeholder="Name"><br>
+        <input
+            class="p-2 h-[30px] w-[400px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none"
+            type="text" id="fname" name="fname" placeholder="Name"><br>
 
-        <input class=" p-2 h-[30px] w-[400px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none" type="text" id="em" name="em" placeholder="Email"><br>
+        <input
+            class=" p-2 h-[30px] w-[400px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none"
+            type="text" id="em" name="em" placeholder="Email"><br>
 
-        <textarea class="p-2 h-[400px] w-[400px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none" id="mname " name="mname"  placeholder="Message"></textarea>
+        <textarea
+            class="p-2 h-[400px] w-[400px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none"
+            id="mname " name="mname" placeholder="Message"></textarea>
 
         <button class="mt-6 " type="submit ">Submit</button>
     </form>
