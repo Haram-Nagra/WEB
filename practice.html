@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+	</head>
+	<body>
+		<h1 style="color: green" >GeeksforGeeks</h1>
+		<h3 >
+			How to change the Content of a textarea with
+			JavaScript?
+		</h3>
+        <p id="p1">haram</p>
+		<textarea id="textArea">
+		A Computer Science Portal
+	</textarea>
+		<br /><br />
+		<button onclick="changeContent()">
+			Click to change
+		</button>
+
+		<script>
+		
+			// JavaScript code to change
+			// the content of <textarea>
+			function changeContent() {
+                const p1 = document.getElementById("p1")
+				let x = document.getElementById("textArea");
+				x.value = p1.value;
+			}
+		</script>
+	</body>
+</html>
