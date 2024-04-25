@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>education</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "315px"
+                    },
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-[#006663] to-[#111111]  font-serif">
+    <form id="form" class="h-screen flex flex-col items-center mt-24">
+        <h2 class="text-3xl">Let's Connect</h2>
+
+        <input
+            class="p-2  h-[30px] w-[350px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none md:h-[30px] md:w-[400px]"
+            type="text" id="fname" name="fname" placeholder="Name"><br>
+
+        <input
+            class=" p-2 h-[30px] w-[350px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none md:h-[30px] md:w-[400px]"
+            type="text" id="em" name="em" placeholder="Email"><br>
+
+        <textarea
+            class="p-2 h-[400px] w-[350px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none md:h-[400px] md:w-[400px]"
+            id="mname " name="msg" placeholder="Message"></textarea>
+
+        <button class="mt-6 " type="button" onclick="clickhandler()">Submit</button>
+    </form>
+
+
+</body>
+</html>

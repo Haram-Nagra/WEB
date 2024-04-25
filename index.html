@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,17 +26,18 @@
 
 <body class="bg-gradient-to-r from-[#006663] to-[#111111]  font-serif ">
     <header
-        class="flex flex-row bg-gradient-to-r from-[#006663] to-[#111111] hover:bg-gradient-to-t justify-center fixed w-full">
+        class=" fixed md:flex md:flex-row md:bg-gradient-to-r md:from-[#006663] to-[#111111] md:hover:bg-gradient-to-t md:justify-center md:fixed md:w-full">
         <nav class="flex flex-row p-3 gap-x-10">
-            <a href="#ed">Education</a>
-            <a href="#sk">Skills</a>
-            <a href="#exp">Experience</a>
-            <a href="#hb">Hobbies</a>
-            <a href="#pj">Projects</a>
-            <a href="#form">Contact</a>
+            <a class="block border border-black hover:bg-gradient-to-t rounded px-2 py-1 md:hidden " onclick="hamfunction()"><i class="fa fa-bars"></i></a>
+            <a href="./education.html" class="hidden md:block">Education</a>
+            <a href="./skills.html" class="hidden md:block">Skills</a>
+            <a href="./experience.html"class="hidden md:block">Experience</a>
+            <a href="./hobbies.html"class="hidden md:block">Hobbies</a>
+            <a href="./projects.html"class="hidden md:block">Projects</a>
+            <a href="./contact.html"class="hidden md:block">Contact</a>
         </nav>
     </header>
-    <div class="flex flex-col items-center px-10 gap-x-10 h-screen text-center md:flex-row md:text-start ">
+    <div class="flex flex-col items-center px-10 gap-x-10 text-center md:flex-row md:text-start md:h-screen ">
         <div class="h-[400px] flex flex-col justify-center md:w-[700px] w-full ">
             <h1 class=" text-4xl sm:text-6xl">Portfolio</h1><br>
             <h3 class="text-2xl mb-6">Haram Iqbal Nagra</h3>
@@ -48,9 +50,9 @@
             <div class='img bg-cover bg-right object-contain h-full w-full'></div>
         </div>
         </div>
-    <div class=' flex flex-row items-start px-10 gap-x-5 '>
+    <div class=' flex flex-col items-center px-10 gap-x-5 text-center md:flex-row md:items-start md:text-start'>
         <div id="ed">
-            <h2 class="text-3xl">Education</h2>
+            <h2 class="text-3xl mt-6 ">Education</h2>
             <ul class=" flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut
                     porro
@@ -70,7 +72,7 @@
             </ul>
         </div>
         <div id="sk">
-            <h2 class="text-3xl">Skills</h2>
+            <h2 class="text-3xl mt-6 ">Skills</h2>
             <ul class=" flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut
                     porro
@@ -90,9 +92,9 @@
             </ul>
         </div>
     </div>
-    <div class=' flex flex-row items-center px-10 gap-y-5 mt-24'>
+    <div class=' flex flex-col items-center text-center px-10 gap-x-5 mt-6 md:mt-24 md:flex-row md:items-center md:text-start'>
         <div id="exp">
-            <h2 class="text-3xl">Experience</h2>
+            <h2 class="text-3xl ">Experience</h2>
 
             <ul class="flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
@@ -104,7 +106,7 @@
             </ul>
         </div>
         <div id="hb">
-            <h2 class="text-3xl">Hobbies</h2>
+            <h2 class="text-3xl mt-6">Hobbies</h2>
             <ul class="flex flex-col items-center px-10 gap-y-5">
                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut atque expedita, repudiandae voluptates
                     quidem blanditiis, iusto sunt temporibus, dolorum voluptatum totam autem sint eos et obcaecati ut
@@ -115,15 +117,15 @@
             </ul>
         </div>
     </div>
-    <div class='flex justify-center px-10 mt-24'>
+    <div class='flex justify-center text-center px-10 mt-6 md:mt-24 md:text-start'>
         <div id="pj">
-            <h2 class="text-3xl">Projects</h2>
+            <h2 class="text-3xl ">Projects</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos rerum labore, officiis, ut porro
                 numquam nulla esse odit voluptatem molestiae, minima perspiciatis. Dignissimos accusamus facere dolor
                 inventore, natus cum illo!</p>
         </div>
     </div>
-    <div class='flex flex-row px-10 gap-x-10 mt-8             '>
+    <div class='flex flex-col px-10 gap-y-10 mt-8 items-center md:flex-row md:gap-x-10'>
         <div class="flex h-[200px] w-[200px] rounded-lg">
             <div class='img bg-cover bg-right object-contain h-full w-full rounded-lg'></div>
         </div>
@@ -144,15 +146,15 @@
         <h2 class="text-3xl">Let's Connect</h2>
 
         <input
-            class="p-2 h-[30px] w-[400px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none"
+            class="p-2  h-[30px] w-[350px] bg-transparent border-[1px] border-black rounded-md mt-6 placeholder-black focus:outline-none md:h-[30px] md:w-[400px]"
             type="text" id="fname" name="fname" placeholder="Name"><br>
 
         <input
-            class=" p-2 h-[30px] w-[400px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none"
+            class=" p-2 h-[30px] w-[350px] bg-transparent  border-[1px] border-black rounded-md placeholder-black focus:outline-none md:h-[30px] md:w-[400px]"
             type="text" id="em" name="em" placeholder="Email"><br>
 
         <textarea
-            class="p-2 h-[400px] w-[400px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none"
+            class="p-2 h-[400px] w-[350px] bg-transparent border-[1px] border-black rounded-md placeholder-black focus:outline-none md:h-[400px] md:w-[400px]"
             id="mname " name="msg" placeholder="Message"></textarea>
 
         <button class="mt-6 " type="button" onclick="clickhandler()">Submit</button>
